@@ -1,0 +1,25 @@
+@use '../vars' as *;
+
+.hero {
+
+  &-content {
+
+    &__title {
+      margin-bottom: 55px;
+    }
+
+    &__text {
+      margin: 0 auto;
+      margin-bottom: 70px;
+      max-width: 860px;
+      font-weight: 400;
+      font-size: 44px;
+      text-align: center;
+    }
+  }
+
+  &-wrap {
+    display: flex;
+    justify-content: center;
+  }
+}

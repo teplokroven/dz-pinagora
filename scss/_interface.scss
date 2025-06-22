@@ -1,0 +1,49 @@
+@use './vars' as *;
+
+.section {
+
+  &-hero {
+    padding-top: 200px;
+    padding-bottom: 65px;
+    background-image:
+      url(../images/svg/bg-left.svg),
+      url(../images/svg/bg-right.svg);
+    background-position: left top, right top;
+    background-repeat: no-repeat;
+  }
+}
+
+.main-title {
+  margin: 0;
+  font-weight: 500;
+  text-align: center;
+  font-size: 94px;
+  font-family: $font-main;
+  color: $col-txt-main;
+}
+
+.title {
+  margin: 0;
+  font-weight: 500;
+  font-size: 64px;
+  font-family: $font-main;
+  color: $col-txt-main;
+}
+
+.subtitle {
+  margin: 0;
+  font-weight: 500;
+  font-size: 38px;
+  line-height: 113%;
+  font-family: $font-main;
+  color: $col-txt-second;
+}
+
+.text {
+  margin: 0;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 125%;
+  font-family: $font-main;
+  color: $col-txt-main;
+}

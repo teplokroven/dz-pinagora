@@ -1,0 +1,72 @@
+@use './vars' as *;
+
+html {
+  height: 100%;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  height: 100%;
+  font-weight: 500;
+  font-size: 20px;
+  background-color: $col-bg-main;
+  color: $col-txt-main;
+}
+
+.container {
+  max-width: 1775px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+img {
+  max-width: 100%;
+  object-fit: cover;
+}
+
+.link-reset {
+  font-family: inherit;
+  font-size: inherit;
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+}
+
+.list-reset {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.btn-reset {
+  padding: 0;
+  border: none;
+  font-family: inherit;
+  font-size: inherit;
+  color: inherit;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.input-reset {
+  padding: 0;
+  width: 100%;
+  outline: none;
+  border: none;
+  border-radius: 0;
+  background-color: transparent;
+  color: inherit;
+  font-size: inherit;
+
+  &::placeholder {
+    font-size: inherit;
+  }
+}
