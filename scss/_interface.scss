@@ -1,10 +1,10 @@
 @use './vars' as *;
 
 .section {
+  padding: 65px 0;
 
   &-hero {
     padding-top: 200px;
-    padding-bottom: 65px;
     background-image:
       url(../images/svg/bg-left.svg),
       url(../images/svg/bg-right.svg);
@@ -16,7 +16,6 @@
 .main-title {
   margin: 0;
   font-weight: 500;
-  text-align: center;
   font-size: 94px;
   font-family: $font-main;
   color: $col-txt-main;

@@ -2,24 +2,34 @@
 
 .hero {
 
-  &-content {
+  &__title {
+    margin-bottom: 50px;
+    text-align: center;
+  }
 
-    &__title {
-      margin-bottom: 55px;
-    }
-
-    &__text {
-      margin: 0 auto;
-      margin-bottom: 70px;
-      max-width: 860px;
-      font-weight: 400;
-      font-size: 44px;
-      text-align: center;
-    }
+  &__text {
+    margin: 0 auto;
+    margin-bottom: 70px;
+    max-width: 860px;
+    font-weight: 400;
+    font-size: 44px;
+    text-align: center;
   }
 
   &-wrap {
     display: flex;
     justify-content: center;
+    gap: 25px;
+
+    &__img-iphone {
+
+      &:last-child {
+        padding-top: 85px;
+      }
+    }
   }
+}
+
+.img-iphone {
+  filter: drop-shadow(0 0 30px rgba(0, 0, 0, 0.4));
 }

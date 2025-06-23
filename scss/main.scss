@@ -1,7 +1,9 @@
 @use './fonts';
 @use './settings';
 @use './interface';
+@use './animations';
 @use './chunk/header';
 @use './chunk/hero';
+@use './chunk/aboutUs';
 @use './chunk/footer';
 @use './media';

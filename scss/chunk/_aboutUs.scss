@@ -1,0 +1,109 @@
+@use '../vars' as *;
+
+.aboutUs {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 70px;
+
+  &-content {
+    max-width: 675px;
+
+    &__title {
+      margin-bottom: 35px;
+    }
+
+    &__text {
+      margin-bottom: 20px;
+
+      &:nth-last-child(2) {
+        margin-bottom: 40px;
+      }
+    }
+
+    &__btn {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 5px;
+      padding: 12px 24px;
+      min-width: 240px;
+      border-radius: 40px;
+      border: 2px solid $col-accent;
+      background-color: $col-accent;
+      font-family: $font-second;
+      font-weight: 600;
+      font-size: 18px;
+      color: $col-bg-second;
+      transition: .2s;
+
+      &--upper {
+        display: contents;
+        text-transform: uppercase;
+      }
+
+      &:hover {
+        background-color: $col-bg-second;
+        color: $col-accent;
+      }
+    }
+
+    &__icon {
+      width: 40px;
+      height: 40px;
+      transition: transform 1s;
+
+      &:hover {
+        animation-name: hand-shake;
+        animation-duration: 1s;
+      }
+    }
+  }
+
+  &-images {
+    margin-right: 145px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 25px;
+
+    &::before {
+      position: absolute;
+      content: "";
+      top: -25px;
+      left: -100px;
+      width: 270px;
+      height: 270px;
+      z-index: -1;
+      background-image: url(../images/svg/aboutUs-logo1.svg);
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+
+    &::after {
+      position: absolute;
+      content: "";
+      top: -45px;
+      right: -60px;
+      width: 125px;
+      height: 125px;
+      background-image: url(../images/svg/aboutUs-logo2.svg);
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+  }
+
+  &-image {
+
+    &:last-child {
+      position: absolute;
+      right: -145px;
+      bottom: 25px;
+    }
+
+    &__item {
+      border-radius: 20px;
+    }
+  }
+}
