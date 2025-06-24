@@ -11,6 +11,16 @@
     background-position: left top, right top;
     background-repeat: no-repeat;
   }
+
+  &-download {
+    padding: 170px 0;
+    background-color: $col-bg-second;
+    background-image:
+      url(../images/svg/down-left.svg),
+      url(../images/svg/down-right.svg);
+    background-position: left bottom, right top;
+    background-repeat: no-repeat;
+  }
 }
 
 .main-title {

@@ -1,0 +1,43 @@
+@use '../vars' as *;
+
+.download {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  &__title {
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+  &__text {
+    margin-bottom: 50px;
+    max-width: 720px;
+    font-weight: 400;
+    font-size: 28px;
+    text-align: center;
+  }
+
+  &__link {
+    margin-bottom: 35px;
+  }
+
+  &__btn {
+    padding: 12px 24px;
+    min-width: 240px;
+    border-radius: 40px;
+    border: 2px solid $col-accent;
+    background-color: $col-accent;
+    font-family: $font-second;
+    font-weight: 600;
+    font-size: 18px;
+    color: $col-bg-second;
+    transition: .2s;
+
+    &:hover {
+      background-color: $col-bg-second;
+      color: $col-accent;
+    }
+  }
+}
