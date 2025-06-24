@@ -1,0 +1,57 @@
+@use '../vars' as *;
+
+.faq {
+
+  &__title {
+    margin-bottom: 85px;
+  }
+}
+
+.spollers {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  gap: 10px;
+  max-width: 1160px;
+
+  .spoller {
+
+    &__header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 10px 15px;
+      margin-bottom: 20px;
+      cursor: pointer;
+      user-select: none;
+      border-bottom: 1px solid $col-accent;
+
+      &::marker {
+        content: '';
+        font-size: 0;
+      }
+    }
+
+    &__title {
+      font-weight: 500;
+      font-size: 28px;
+      line-height: 105%;
+      transition: .2s;
+    }
+
+    &__icon {
+      width: 15px;
+    }
+
+    &__content {
+      overflow: hidden;
+      max-height: 0;
+      transition: max-height 0.3s ease;
+    }
+
+    &__text {
+      padding: 10px 15px;
+      max-width: 1000px;
+    }
+  }
+}

@@ -1,0 +1,38 @@
+@use '../vars' as *;
+
+.problem {
+
+  &__title {
+    margin-bottom: 85px;
+    max-width: 890px;
+  }
+
+  &__cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+
+  &-card {
+    position: relative;
+    padding-left: 70px;
+    max-width: 560px;
+
+    &__subtitle {
+      font-size: 44px;
+      line-height: 105%;
+    }
+
+    &::before {
+      position: absolute;
+      content: "";
+      width: 40px;
+      height: 40px;
+      left: 0;
+      background-image: url(../images/svg/problem-logo.svg);
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
+  }
+}
