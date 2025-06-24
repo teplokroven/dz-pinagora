@@ -4,8 +4,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  flex-wrap: wrap;
-  gap: 70px;
+  gap: 60px;
 
   &-content {
     max-width: 675px;
@@ -53,11 +52,6 @@
       width: 40px;
       height: 40px;
       transition: transform 1s;
-
-      &:hover {
-        animation-name: hand-shake;
-        animation-duration: 1s;
-      }
     }
   }
 
@@ -106,4 +100,9 @@
       border-radius: 20px;
     }
   }
+}
+
+.aboutUs-content__btn:hover .aboutUs-content__icon {
+  animation-name: hand-shake;
+  animation-duration: 1s;
 }

@@ -1,4 +1,31 @@
-@media (max-width: 1200px) {
+@media (max-width: 1600px) {
+
+  .aboutUs {
+
+    &-images {
+      justify-content: center;
+      flex-wrap: wrap;
+
+      &::before {
+        top: -110px;
+      }
+
+      &::after {
+        top: 270px;
+      }
+    }
+
+    &-image {
+
+      &:last-child {
+        right: -40px;
+        width: 240px;
+      }
+    }
+  }
+}
+
+@media (max-width: 1230px) {
 
   .hero {
 
@@ -8,6 +35,17 @@
 
     &__text {
       font-size: 40px;
+    }
+  }
+
+  .aboutUs {
+
+    &-content {
+      max-width: 520px;
+    }
+
+    &-images {
+      margin-right: 50px;
     }
   }
 }
@@ -36,11 +74,58 @@
       font-size: 35px;
     }
   }
+
+  .aboutUs {
+    justify-content: start;
+
+    &-images {
+      margin-right: 0;
+      gap: 0;
+
+      &::after {
+        top: -75px;
+      }
+    }
+
+    &-image {
+      background-size: cover;
+
+      &:nth-child(1) {
+        position: absolute;
+        width: 245px;
+        top: 30px;
+        left: -15px;
+        z-index: -1;
+      }
+
+      &:nth-child(2) {
+        overflow: hidden;
+        margin-left: 160px;
+        width: 125px;
+        height: 320px;
+        border-radius: 20px;
+      }
+
+      &:nth-child(3) {
+        position: absolute;
+        width: 190px;
+        height: 155px;
+        left: -15px;
+        bottom: 10px;
+      }
+
+      &__item--hidden {
+        max-width: none;
+        width: 160%;
+      }
+    }
+  }
 }
 
 @media (max-width: 768px) {
 
   .section {
+    padding: 30px 0;
 
     &-hero {
       padding-top: 100px;
@@ -63,6 +148,37 @@
       font-size: 28px;
     }
   }
+
+  .aboutUs {
+    flex-direction: column;
+    gap: 90px;
+
+    &-content {
+      max-width: 100%;
+
+      &__title {
+        margin-bottom: 25px;
+        font-weight: 600;
+        font-size: 36px;
+      }
+
+      &__text {
+        font-size: 16px;
+
+        &:nth-last-child(2) {
+          margin-bottom: 30px;
+        }
+      }
+
+      &__btn {
+        padding-top: 10px;
+        padding-bottom: 10px;
+        margin: 0 auto;
+        min-width: 300px;
+        font-size: 16px;
+      }
+    }
+  }
 }
 
 @media (max-width: 576px) {
@@ -82,6 +198,21 @@
 
     &-wrap {
       gap: 10px;
+    }
+  }
+
+  .aboutUs {
+
+    &-images {
+    }
+
+    &-image {
+
+      &:nth-child(1) {
+
+        &:nth-child(2) {
+        }
+      }
     }
   }
 }
