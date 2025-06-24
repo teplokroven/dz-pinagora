@@ -4,5 +4,137 @@
 
   &__title {
     margin-bottom: 35px;
+
+    &--upper {
+      text-transform: uppercase;
+    }
+  }
+
+  &__cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+  }
+
+  &-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+    padding: 30px 30px 0;
+    overflow: hidden;
+    background-color: $col-bg-second;
+    border-radius: 20px;
+
+    &__img {
+      display: flex;
+      align-items: end;
+    }
+
+    &--texts {
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      border-radius: 0;
+      background-color: transparent;
+    }
+
+    &__accent {
+      font-weight: 600;
+      color: $col-accent;
+    }
+
+    &__btn {
+      padding: 12px 24px;
+      max-width: 260px;
+      border-radius: 40px;
+      border: 2px solid $col-accent;
+      background-color: $col-accent;
+      font-family: $font-second;
+      font-weight: 600;
+      font-size: 16px;
+      color: $col-bg-second;
+      transition: .2s;
+
+      &:hover {
+        background-color: $col-bg-second;
+        color: $col-accent;
+      }
+    }
+
+    &::before {
+      position: absolute;
+      content: "";
+      background-image: url(../images/svg/aboutProject-logo1.svg);
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
+  }
+
+  &-cardLeft {
+    justify-content: flex-start;
+    padding-bottom: 100px;
+    grid-row: span 2;
+    gap: 70px;
+    background-color: $col-bg-third;
+
+    &::before {
+      top: -100px;
+      right: -100px;
+      width: 840px;
+      height: 670px;
+      rotate: 25deg;
+    }
+  }
+
+  &-cardMidTop {
+
+    &::before {
+      top: -60px;
+      right: -76px;
+      width: 350px;
+      height: 300px;
+      rotate: -40deg;
+    }
+  }
+
+  &-cardRightTop {
+
+    &__img {
+      margin-left: 30px;
+    }
+
+    &::before {
+      top: -10px;
+      left: 204px;
+      width: 250px;
+      height: 250px;
+      rotate: 5deg;
+    }
+  }
+
+  &-cardRightBot {
+
+    &__img {
+      justify-content: end;
+    }
+
+    &::before {
+      top: -100px;
+      right: -100px;
+      width: 840px;
+      height: 670px;
+      rotate: 25deg;
+    }
+  }
+}
+
+.img-card__item {
+  filter: drop-shadow(-10px 15px 30px rgba(0, 0, 0, 0.35));
+
+  &--left {
+    margin-left: 30px;
   }
 }
