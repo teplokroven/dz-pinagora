@@ -1,12 +1,5 @@
 @use '../vars' as *;
 
-.faq {
-
-  &__title {
-    margin-bottom: 85px;
-  }
-}
-
 .spollers {
   display: flex;
   flex-direction: column;
@@ -33,6 +26,7 @@
     }
 
     &__title {
+      margin-bottom: 0;
       font-weight: 500;
       font-size: 28px;
       line-height: 105%;
@@ -51,6 +45,7 @@
 
     &__text {
       padding: 10px 15px;
+      margin-bottom: 35px;
       max-width: 1000px;
     }
   }
